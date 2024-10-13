@@ -4,6 +4,7 @@
 #include <type_traits>
 #include<string>
 #include<bits/stdc++.h>
+#include <regex>
 
 
 using namespace std;
@@ -295,11 +296,13 @@ bool checkisvalidEmail(string str){
            }
            return true;
         }
-bool checkadharisvalid(long long adharnumber){
-    if(adharnumber>99999999999 && adharnumber<=999999999999){
-        return true;
-    }
-    return false;}
+bool checkadharisvalid(long long adharNo) {
+    string adharnumber=to_string(adharNo);
+    regex pattern("^\\d{12}$");
+    
+    bool t=regex_match(adharnumber, pattern);
+    return t;
+}
 bool checkPANnumberisvalid(string str){
     int n=str.size();
     if(n!=10){
@@ -331,13 +334,12 @@ bool checkPANnumberisvalid(string str){
     return false;}
 
 
-bool checkmobilenumisvalid(long long mobileno1){
-   
-    if(mobileno1>999999999 && mobileno1<=9999999999){
-        return true;
-    }
-   
-    return false;}
+bool checkmobilenumisvalid(long long mobileNo) {
+    string mobileStr = to_string(mobileNo);
+    regex pattern("^[789]\\d{9}$"); 
+    bool x= regex_match(mobileStr, pattern);
+    return x;
+}
 
 bool checkisvaliddate(int DD,int MM,int YY){
     if(DD<1 || DD>31){

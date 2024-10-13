@@ -1,0 +1,28 @@
+ID: 41
+First Name: harsh
+Last Name: kuma
+Email: h@gmail.com
+Adhar No: 123451234512
+PAN No: QWERT1234Q
+Address: ss
+Mobile No: 1234554321
+Date of Birth: 1/1/01
+Income: 111111
+Profession: s
+Name of Nominee: ss
+current balance: 100
+----------------------------------
+ID: 18467
+First Name: mk
+Last Name: ss
+Email: mkjh@gmail.com
+Adhar No: 507452367845
+PAN No: HIUPK8025A
+Address: SSM
+Mobile No: 9507065060
+Date of Birth: 1/2/03
+Income: 5555555
+Profession: HYTSESUOP
+Name of Nominee: P4RINCE
+current balance: 6969696
+----------------------------------

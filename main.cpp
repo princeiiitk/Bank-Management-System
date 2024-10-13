@@ -32,10 +32,12 @@ int main() {
     cout<<"Enter 11 for Closing Account "<<endl;
     int n;
     cin>>n;
+     
     if(n==1){
         cout<<"Enter 1 for saving account"<<endl;
         cout<<"Enter 2 for current account"<<endl;
         int n;
+        
         cin>>n;
         if(n==1){
           Account account;
