@@ -325,7 +325,7 @@ int main() {
     }
     else{
       cout<<"you pressing wrong key"<<endl;
-      return 0;
+      flag=1;
     }
    
    
