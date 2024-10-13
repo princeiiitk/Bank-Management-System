@@ -14,10 +14,10 @@ public:
        string FirstName;
        string LastName;
        string Email;
-       long long AdharNo;
+       string AdharNo;
        string PANNo;
        string Address;
-       long long MobileNo;
+       string MobileNo;
        string Date;
        long long Income;
        string Profession;
@@ -84,10 +84,10 @@ void SavingAccount(){
           
 
           
-          long long adharnumber1;
+          string adharnumber1;
           int flagAdhar=0;
           bool isvalidAdhar=0;
-          while(!isvalidAdhar){
+while(!isvalidAdhar){
             if(flagAdhar==0){
                 cout<<"Enter Your Adhar  Number"<<endl;
                 flagAdhar=1;
@@ -109,7 +109,7 @@ void SavingAccount(){
        int flagPAN=0;
           string PAN1;
           bool isvalidPAN=0;
-          while(!isvalidPAN){
+while(!isvalidPAN){
             if(flagPAN==0){
                 flagPAN=1;
                 cout<<"Enter your PAN Number IN FORMATE OF -QWERT1234Q"<<endl;
@@ -136,8 +136,8 @@ void SavingAccount(){
      int flagmob=0;
      bool isvalidmob=0;
     
-     long long mobileno1;
-     while(!isvalidmob){
+    string mobileno1;
+while(!isvalidmob){
         if(flagmob==0){
             flagmob=1;
              cout<<"Enter your mobile number"<<endl;
@@ -152,6 +152,9 @@ void SavingAccount(){
             break;
         }
         else if(!isvalidmob && flagmob==1){
+            cout<<"Try Again Invalid Mobile Number"<<endl;
+        }
+        else{
             cout<<"Try Again Invalid Mobile Number"<<endl;
         }
         
@@ -296,11 +299,11 @@ bool checkisvalidEmail(string str){
            }
            return true;
         }
-bool checkadharisvalid(long long adharNo) {
-    string adharnumber=to_string(adharNo);
+bool checkadharisvalid(string adharNo) {
+    
     regex pattern("^\\d{12}$");
     
-    bool t=regex_match(adharnumber, pattern);
+    bool t=regex_match(adharNo, pattern);
     return t;
 }
 bool checkPANnumberisvalid(string str){
@@ -334,10 +337,10 @@ bool checkPANnumberisvalid(string str){
     return false;}
 
 
-bool checkmobilenumisvalid(long long mobileNo) {
-    string mobileStr = to_string(mobileNo);
+bool checkmobilenumisvalid(string mobileNo) {
+    
     regex pattern("^[789]\\d{9}$"); 
-    bool x= regex_match(mobileStr, pattern);
+    bool x= regex_match(mobileNo, pattern);
     return x;
 }
 

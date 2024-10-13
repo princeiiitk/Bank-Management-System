@@ -323,6 +323,10 @@ int main() {
           flag=0;
          }
     }
+    else{
+      cout<<"you pressing wrong key"<<endl;
+      return 0;
+    }
    
    
     }
